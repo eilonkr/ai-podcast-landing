@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',  // Enable static exports
-  basePath: process.env.NODE_ENV === 'production' ? '/ai-podcast-landing' : '', // Only use basePath in production
+  basePath: '/ai-podcast-landing', // Repository name
   images: {
     unoptimized: true,
   },
@@ -12,4 +12,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig;
+module.exports = nextConfig;
